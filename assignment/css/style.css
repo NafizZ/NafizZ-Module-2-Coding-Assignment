@@ -4,25 +4,13 @@ h1 {
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .row {
   width: 100%;
 }
 
-
-  h3 {
-    height: 30px;
-    width: 110px;
-    float: right;
-    padding: 5px 10px;
-    margin-top: 0px;
-    margin-right: 0px;
-    border: 1px solid green;
-    text-align: center;
-    background-color: pink;
-  }
 
   p {
     padding: 5px 10px;
@@ -39,27 +27,29 @@ h1 {
         margin: 5px 10px;
         background-color: #B2BEB5;
         width: 32%;
+        position: relative;
+        overflow: auto;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px){
-    .col-1, .col-2, .col-3 {
+    .col-2, .col-3 {
         border: 1px solid green;
         margin: 5px 10px;
         background-color: #B2BEB5;
-    }
-    .col-1 {
-        width: 49%;
-        height: auto;
+        float: left;
+        position: relative;
+        overflow: auto;
     }
     .col-2 {
-        float: left;
-        width: 49%;
+
+        width: 48%;
         height: auto;
     }
     .col-3 {
+
         clear: both;
-        width: 100%;
+        width: 97%;
         height: auto;
     }
 }
@@ -72,6 +62,61 @@ h1 {
         padding: 10px 20px;
         background-color: #B2BEB5;
         width: 100%;
+        position: relative;
+        overflow: auto;
     }
 }
 
+#h1{
+    background-color: yellow;
+    margin: 0;
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+}
+#h2{
+    background-color: red;
+    margin: 0;
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+}
+#h3{
+    background-color: green;
+    margin: 0;
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+h3 {
+
+    float: right;
+    padding: 5px 10px;
+    margin-top: 0px;
+    margin-right: 0px;
+    border: 1px solid black;
+    text-align: center;
+
+  }
